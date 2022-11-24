@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Blog</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <script src="app.js" type="module"></script>
+   </head>
+   <body>
+      <div class="header_section">
+         <div class="header_main">
+            <div class="mobile_menu">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="logo_mobile"><a href="index.html"><img src="images/ch.jfif"></a></div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                           <a class="nav-link " href="blog.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="Features.html">Features</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+            <div class="container-fluid">
+               <div class="logo"><a href="index.html"><img src="images/ch.jfif"></a></div>
+               <div class="menu_main">
+                  <ul>
+                     <li class="active"><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                   
+                     <li><a href="blog.html">Gallery</a></li>
+                     <li><a href="contact.html">Contact us</a></li>
+                     <li><a href="Features.html">Features</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <template>
+         <li>
+             <img alt="" loading="lazy">
+         </li>
+     </template>
+     <div class="row">
+      <div class="column">
+        <img src="christ.JPG" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+    
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+    
+    <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
+    
+      <div class="blog_section layout_padding margin_top_90">
+         <div class="container">
+            <h1 class="blog_taital">See Our  Video</h1>
+            <p class="blog_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+            <div class="play_icon_main">
+               <div class="play_icon"><a href="#"><img src="images/play-icon.png"></a></div>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6 padding_right_0">
+         <div><img src="images/maxresdefault.jpg" class="about_img"></div>
+      </div>
+      <div class="col-md-6 padding_right_0">
+         <div><img src="images/maxresdefault (1).jpg" class="about_img"></div>
+      </div>
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="input_btn_main">
+               <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
+               <div class="subscribe_bt"><a href="#">Contact</a></div>
+            </div>
+            <div class="location_main">
+               <div class="call_text"><img src="images/call-icon.png"></div>
+               <div class="call_text"><a href="#">Call +91 9847591164</a></div>
+               <div class="call_text"><img src="images/mail-icon.png"></div>
+               <div class="call_text"><a href="#">abcd@gmail.com</a></div>
+            </div>
+            <div class="social_icon">
+               <ul>
+                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                  <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
